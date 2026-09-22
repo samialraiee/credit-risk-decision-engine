@@ -27,8 +27,23 @@ models/*
 # Generated reports, tables, figures, and dashboard extracts
 reports/figures/*
 !reports/figures/.gitkeep
+!reports/figures/*.png
 reports/tables/*
 !reports/tables/.gitkeep
+!reports/tables/calibration_table.csv
+!reports/tables/data_quality_log.csv
+!reports/tables/drift_baseline.csv
+!reports/tables/model_comparison.csv
+!reports/tables/segment_diagnostics.csv
+!reports/tables/sql_default_by_credit_limit_band.csv
+!reports/tables/sql_default_by_latest_repayment_status.csv
+!reports/tables/sql_portfolio_summary.csv
+!reports/tables/sql_repeated_delinquency.csv
+!reports/tables/test_model_metrics.csv
+!reports/tables/threshold_economics.csv
+# Keep account-level prediction and exposure extracts local.
+reports/tables/test_predictions.csv
+reports/tables/sql_top_high_exposure_delinquent_accounts.csv
 dashboard/credit_risk_dashboard.csv
 
 # Temporary and local output files

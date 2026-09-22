@@ -1,0 +1,8 @@
+check,value,action
+raw_rows,30000,none
+duplicate_customer_ids,0,drop duplicate IDs after first occurrence
+missing_values_after_numeric_coercion,0,drop rows missing target/core identifiers; model pipeline imputes remaining predictors
+undocumented_education_codes,345,map values outside 1-4 to 4 (other)
+undocumented_marital_codes,54,map values outside 1-3 to 3 (other)
+nonpositive_credit_limits,0,retain but flag; expected to be zero in source
+age_outside_18_100,0,retain but flag; expected to be zero/negligible
