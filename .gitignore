@@ -1,0 +1,39 @@
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+
+# Local secrets and environment files
+.env
+.env.*
+!.env.example
+
+# Source and processed data
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# Trained model binaries and local databases
+models/*
+!models/.gitkeep
+*.joblib
+*.pkl
+*.pickle
+*.db
+*.sqlite
+*.sqlite3
+
+# Generated reports, tables, figures, and dashboard extracts
+reports/figures/*
+!reports/figures/.gitkeep
+reports/tables/*
+!reports/tables/.gitkeep
+dashboard/credit_risk_dashboard.csv
+
+# Temporary and local output files
+*.tmp
+*.temp
+*.log
+*.bak
+*.swp
